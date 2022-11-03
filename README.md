@@ -1,1 +1,1 @@
-lear-aws
+learn-aws
