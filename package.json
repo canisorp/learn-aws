@@ -23,6 +23,7 @@
   "dependencies": {
     "aws-cdk-lib": "2.41.0",
     "aws-sdk": "^2.1246.0",
+    "cdk-dynamo-table-viewer": "^0.2.0",
     "constructs": "^10.0.0"
   }
 }
