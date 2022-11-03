@@ -21,7 +21,7 @@ exports.handler = async (event) => {
         Payload: JSON.stringify(event)
     }).promise();
 
-    console.log("Downstream response:", JSON.stringify(res, undefined, w));
+    console.log("Downstream response:", JSON.stringify(res, undefined, 2));
 
     // return response back to upstream caller
     return JSON.parse(res.Payload);
