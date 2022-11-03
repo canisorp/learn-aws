@@ -26,7 +26,8 @@ export class LearnAwsStack extends cdk.Stack {
 
     new TableViewer(this, 'ViewHitCounter', {
       title: 'Hello Hits',
-      table: helloHitCounter.table
+      table: helloHitCounter.table,
+      sortBy: "-hits"
     });
   };
 };
