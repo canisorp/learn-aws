@@ -18,7 +18,7 @@ exports.handler = async (event) => {
     // call downstream function and capture response
     const res = await lambda.invoke({
         FunctionName: process.env.DOWNSTREAM_FUNCTION_NAME,
-        Payload: JSON.parse(event)
+        Payload: JSON.stringify(event)
     }).promise();
 
     console.log("Downstream response:", JSON.stringify(res, undefined, w));
